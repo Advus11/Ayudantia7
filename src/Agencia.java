@@ -1,37 +1,53 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Agencia {
+    private Collection<Agente> agentes;
+    private Collection<Cliente> clientes;
     private String nombre;
-    private ArrayList<Agente> listaAgentes;
-    private ArrayList<Cliente> listaClientes;
-
-    public Agencia(String nombre, ArrayList<Agente> listaAgentes, ArrayList<Cliente> listaClientes) {
-        this.nombre = nombre;
-        this.listaAgentes = listaAgentes;
-        this.listaClientes = listaClientes;
-    }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
+
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public ArrayList<Agente> getListaAgentes() {
-        return listaAgentes;
+
+    public Agente añadirVendedor(String nombre, int identificacion) {
+        // TODO - implement Agencia.añadirVendedor
+        throw new UnsupportedOperationException();
     }
 
-    public void setListaAgentes(ArrayList<Agente> listaAgentes) {
-        this.listaAgentes = listaAgentes;
+
+    public Agente buscarVendedor(int identificacion) {
+        // TODO - implement Agencia.buscarVendedor
+        throw new UnsupportedOperationException();
     }
 
-    public ArrayList<Cliente> getListaClientes() {
-        return listaClientes;
+
+    public Agente eliminarVendedor(int identificacion) {
+        // TODO - implement Agencia.eliminarVendedor
+        throw new UnsupportedOperationException();
     }
 
-    public void setListaClientes(ArrayList<Cliente> listaClientes) {
-        this.listaClientes = listaClientes;
+
+    public boolean generarVenta(String nombre, int identificacion, String origen, String destino, int precioPagar) {
+        // TODO - implement Agencia.generarVenta
+        throw new UnsupportedOperationException();
     }
+
+
+    public Cliente añadirCliente(String nombre, int identificacion, String correoElectronico) {
+        // TODO - implement Agencia.añadirCliente
+        throw new UnsupportedOperationException();
+    }
+
+
+    public Cliente buscarCliente(int identificacion) {
+        // TODO - implement Agencia.buscarCliente
+        throw new UnsupportedOperationException();
+    }
+
 }
