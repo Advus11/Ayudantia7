@@ -1,35 +1,44 @@
 public class Cliente {
+
     private String nombre;
     private int identificacion;
-    private String nacionalidad;
-
-    public Cliente(String nombre, int identificacion, String nacionalidad) {
-        this.nombre = nombre;
-        this.identificacion = identificacion;
-        this.nacionalidad = nacionalidad;
-    }
+    private String origen;
+    private String destino;
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
+
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public int getIdentificacion() {
-        return identificacion;
+        return this.identificacion;
     }
+
 
     public void setIdentificacion(int identificacion) {
         this.identificacion = identificacion;
     }
 
-    public String getNacionalidad() {
-        return nacionalidad;
+    public String getOrigen() {
+        return this.origen;
     }
 
-    public void setNacionalidad(String nacionalidad) {
-        this.nacionalidad = nacionalidad;
+
+    public void setOrigen(String origen) {
+        this.origen = origen;
     }
+
+    public String getDestino() {
+        return this.destino;
+    }
+
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
 }
